@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     // Step 6: Return result to frontend
-    $output = "Result: $num1 $operator $num2 = $result";
+    $output = "Answer: $num1 $operator $num2 = $result";
     header("Location: index.php?message=" . urlencode($output));
     exit;
 } else {
